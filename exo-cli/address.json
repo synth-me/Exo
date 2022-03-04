@@ -1,0 +1,4 @@
+{
+	"interface_address":"http://localhost:3000/",
+	"mqtt_address":"mqtt://localhost:1883"
+}
