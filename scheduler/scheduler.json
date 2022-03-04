@@ -1,0 +1,9 @@
+[
+	{
+		"name_schedule":"schedule1",
+		"mode":"m",
+		"time":2.0,
+		"message_notify":"testing",
+		"path_log":"log.txt"
+	}
+]
