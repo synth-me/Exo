@@ -1,0 +1,42 @@
+-> Software
+
+	-> GUI 
+		- aumentar bottom bar para icones 
+		- detalhar mais top bar 
+		- novas paginas no desktop		
+
+	-> Infra 
+
+		- Fazer tutoriais	
+				- schedulers 
+		
+		- comentar e melhorar o codigo como um todo
+		- melhorar schedulers
+		- criar uma interface mais amigavel no cli 
+		- automatizar adição dos executaveis ás variavies de ambiente 
+			- resilience.exe
+			- interactive.exe
+		- reescrever os arquivos de build em perl 
+		- conectar o backend com o frontend ( 8/ 10 )
+		- consertar publicação de notificação
+	
+
+-> Hardware 
+
+	- criar as bibliotecas dos sensores
+		-> adiconar sensores ao esp automaticamente 
+		-> detectar adição de sensores
+	- criar backups/redundanica de sensores
+	- criar ativos (ex. bomba d'agua ) que identifiquem as notificações
+	- dividir os tipos de sensores ( ativos e passivos ) cada um com sua biblioteca
+ 
+-> Other
+
+	- fazer apresentação 
+	- detalhar diferentes modelos de negocio
+		-> SaaS : software as a service 
+			-> plugins
+			-> servidores flexiveis 
+			-> manutenção automatica 
+		-> Maas : machine as a service  -> sensores 
+			-> cobrança com IOTA / smart contracts 
