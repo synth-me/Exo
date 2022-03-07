@@ -1,6 +1,11 @@
 use warnings ; 
 use strict ; 
 
+sub download_mqtt_package {
+  # here we download the mqtt basic package and vendorize it in everry folder of the
+  # project 
+};
+
 sub insert_variables {
   # here we insert the dependencies and the path of the variables 
 };
