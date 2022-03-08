@@ -1,3 +1,4 @@
+use warnings ; 
 use strict ; 
 use HTTP::Request;
 use LWP::UserAgent ();  
@@ -72,17 +73,77 @@ sub compile_C_source{
 	my $command_C = "gcc -shared -o ./puppet.dll ./puppet.c"; 
 	print "Compiling C dll or SO : \n";
 	print "Running on :: $path the command : $command_C \n";
+	system($command_C);
 	chdir("..");
 	return 1 ;
 };
 
+sub download_node_dependencies {
+	print "Downloading node dependencies ... \n";	
+
+	my @node_depen = (
+		"livescript",
+		"prelude-ls",
+		"mqtt",
+		"express",
+		"compute-cosine-similarity",
+		"ml-knn",
+		"colors",
+		"ascii-art",
+		"cli-progress",
+		"process"
+	);
+
+
+	foreach my $package (@node_depen){
+		my $command = "npm install -g $package"; 
+		system $command ; 	
+	};
+	
+};
+
+sub download_python_dependencies {
+	print "Downloading python dependencies ... \n";
+
+	my @python_depen = (
+		"colorama",
+		"art",
+		"paho-mqtt",
+		"progress",
+		"emoji"
+	);
+
+	foreach my $package (@python_depen){
+		my $command = "py -m pip install $package"; 
+		system $command;
+	};
+
+		
+};
 
 sub main{
 	download_mqtt_package();
 	compile_haskell_source();
 	compile_C_source();
+	download_node_dependencies();
+	download_python_dependencies();
+
+	print "Build complete ... \n";
+
+	print "Would you like to launch Exo now ?[y/n] :: ";
+	my $option = <STDIN>;
+	chomp $option;
+	
+	if($option eq "y"){
+		system "py main.py";
+	}else{
+		print "Okay, you can launch Exo running 'startup' here \n";
+	};
+	
 };
 
 
 main();
 
+
+# eof 
