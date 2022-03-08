@@ -21,3 +21,15 @@ To delete a plugin
 ```
 R-click -> select plugin -> delete -> ok 
 ```
+
+To watch the current reports for all of them 
+
+```
+reports
+```
+
+and to filter the reports 
+
+```
+reports -> text -> click filter
+```
