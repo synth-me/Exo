@@ -86,22 +86,3 @@ sub main{
 
 main();
 
-
-# eof 
-endencies {
-  # here we check the after installation 
-};
-
-sub compile_source_codes {
-  # here we compile the codes to single executables including python , perl and javascript scripts 
-};
-
-sub main {
-  print "Started compilation ... \n" ; 
-  install_dependencies();
-  check_dependencies();
-  compile_source_codes();
-  insert_variables();
-};
-
-main();
