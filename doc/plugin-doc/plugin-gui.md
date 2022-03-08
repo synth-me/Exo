@@ -11,6 +11,11 @@ To download a package
 package -> paste the link -> download 
 ``` 
 
+To inspect a plugin 
+
+```
+R-click -> select plugin -> inspect  
+```
 To delete a plugin 
 
 ```
