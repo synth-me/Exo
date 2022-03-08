@@ -55,7 +55,7 @@ all you have to do is changing the configuration file and restarting the exo ins
 
 Coming back to Exo itself, it may take a while , but if it did not fail you must be able to successfully run :
 ```ps
-startup
+py main.py 
 ```
 
 and you may see : 
@@ -101,6 +101,8 @@ just need to do in a terminal :
 epm --notifications
 ```
 
+
+
 and if you want to filter specific notifications you can use a regex pattern to do it using (example): 
 
 ```ps
@@ -108,6 +110,8 @@ epm --notifications:regex "[a-z]{0,10}[0-9]"
 ```
 
 with this you'll be able to watch the system's current health and so on. 
+
+
 
 
 ## Using Exo 
