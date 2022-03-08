@@ -1,0 +1,18 @@
+# Using the GUI with Plugin 
+
+We create a new plugin using : 
+
+```
+R-click -> select plugin -> new 
+```
+
+To download a package 
+```
+package -> paste the link -> download 
+``` 
+
+To delete a plugin 
+
+```
+R-click -> select plugin -> delete -> ok 
+```
