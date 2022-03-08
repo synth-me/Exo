@@ -323,17 +323,22 @@ def desktop(window):
     try:
         output_json = json.loads(output)
     except:
-        output = output.decode("utf-8")
-        output = output.replace('"','',1)
-        output = rreplace(output,'"','')
-        output_json = json.loads(output)
-        
-        for i in output_json :
-            plugin_icon(desktop_frame,i["name_module"],"","",1)
-            GeneralPlg[i["name_module"]] = {
-                "routes":i["agg_route"],
-                "script_path":i["script_path"]
-            }
+        try :
+            
+            output = output.decode("utf-8")
+            output = output.replace('"','',1)
+            output = rreplace(output,'"','')
+            output_json = json.loads(output)
+            
+            for i in output_json :
+                plugin_icon(desktop_frame,i["name_module"],"","",1)
+                GeneralPlg[i["name_module"]] = {
+                    "routes":i["agg_route"],
+                    "script_path":i["script_path"]
+                }
+        except :
+            pass
+
 
             
     desktop_frame.pack(fill=BOTH,expand=True)
