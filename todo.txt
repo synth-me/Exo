@@ -19,7 +19,8 @@
 		- reescrever os arquivos de build em perl 
 		- conectar o backend com o frontend ( 8/ 10 )
 		- consertar publicação de notificação
-	
+		- adicionar sistema de conexao para esqueleto
+		- adicionar sistema de coneção FaaS
 
 -> Hardware 
 
